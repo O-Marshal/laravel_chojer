@@ -1,0 +1,26 @@
+{
+    "name": "ckryo/laravel_cms",
+    "description": "laravel cms",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "cms"],
+    "support": {
+        "issues": "https://github.com/laravel/laravel_cms/issues",
+        "source": "https://github.com/ckryo/laravel_cms"
+    },
+    "authors": [
+        {
+            "name": "ckryo",
+            "email": "ckryo@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "ckryo/laravel_admin": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ckryo\\Laravel\\Cms\\": "src"
+        }
+    }
+}

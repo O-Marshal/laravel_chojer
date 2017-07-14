@@ -1,0 +1,29 @@
+{
+    "name": "ckryo/laravel_expand",
+    "description": "laravel 错误处理及错误码管理",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "expand"],
+    "support": {
+        "issues": "https://github.com/ckryo/laravel_expand/issues",
+        "source": "https://github.com/ckryo/laravel_expand"
+    },
+    "authors": [
+        {
+            "name": "ckryo",
+            "email": "ckryo@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "~5.4",
+        "ckryo/laravel_logi": "~5.4",
+        "ckryo/laravel_auth": "~5.4",
+        "ckryo/laravel_handler": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ckryo\\Laravel\\Expand\\": "src"
+        }
+    }
+}

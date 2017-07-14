@@ -1,0 +1,26 @@
+{
+    "name": "ckryo/laravel_logi",
+    "description": "操作记录及IP记录 logi",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "logi"],
+    "support": {
+        "issues": "https://github.com/ckryo/laravel_logi/issues",
+        "source": "https://github.com/ckryo/laravel_logi"
+    },
+    "authors": [
+        {
+            "name": "ckryo",
+            "email": "ckryo@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ckryo\\Laravel\\Logi\\": "src"
+        }
+    }
+}

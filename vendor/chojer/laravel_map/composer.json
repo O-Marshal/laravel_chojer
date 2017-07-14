@@ -1,0 +1,9 @@
+{
+    "name": "chojer/laravel_map",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Chojer\\Laravel\\Map\\": "src"
+        }
+    }
+}

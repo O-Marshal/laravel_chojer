@@ -1,0 +1,26 @@
+{
+    "name": "ckryo/laravel_http",
+    "description": "响应格式封装、跨域处理",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "http"],
+    "support": {
+        "issues": "https://github.com/ckryo/laravel_http/issues",
+        "source": "https://github.com/ckryo/laravel_http"
+    },
+    "authors": [
+        {
+            "name": "ckryo",
+            "email": "ckryo@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ckryo\\Laravel\\Http\\": "src"
+        }
+    }
+}

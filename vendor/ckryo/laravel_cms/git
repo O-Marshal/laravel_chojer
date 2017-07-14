@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+
+
+$tags = shell_exec('git tag');
+
+$tag_arr = explode("\n", $tags);
+$tag_arr = array_map(function ($tag) {
+    $t = explode('.', $tag);
+    $t = count($t) === 3 ? $t : [0, 0, 0];
+    return intval($t[0]) * 1000000000 + intval($t[1]) * 1000000 + intval($t[2]) + 1;
+}, $tag_arr);
+rsort($tag_arr);
+
+$last_tag_int = $tag_arr[0];
+$last_tag_v1 = intval($last_tag_int / 1000000000);
+$last_tag_v2 = intval($last_tag_int % 1000000000 / 1000000);
+$last_tag_v3 = intval($last_tag_int % 1000000000 % 1000000);
+$last_tag = $last_tag_v1 . '.' . $last_tag_v2 . '.' . $last_tag_v3;
+
+$msg = '-';
+if (count($argv) >= 2) $msg = $argv[1];
+
+$cmd = "git add * && git commit -m $msg && git push";
+echo exec($cmd);
+echo "\n";
+echo exec("git tag $last_tag && git push --tag");
+
+echo "\n";

@@ -1,0 +1,12 @@
+{
+    "name": "chojer/laravel_customer",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chojer\\Laravel\\Customer\\": "src"
+        }
+    }
+}
